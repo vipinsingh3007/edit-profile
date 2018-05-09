@@ -5,5 +5,5 @@ import App from './App';
 import DesignEditProfile from './components/designEditProfile';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<div style={{textAlign:'center'}}><DesignEditProfile /></div>, document.getElementById('root'));
+ReactDOM.render(<DesignEditProfile />, document.getElementById('root'));
 registerServiceWorker();
