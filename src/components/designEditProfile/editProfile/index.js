@@ -1,6 +1,13 @@
 import React from 'react';
 import { Row, Col } from 'antd';
 import './index.css';
+import customerType from './../../../images/customerType.png';
+import email from './../../../images/email.png';
+import loginID from './../../../images/loginID.png';
+import mailingAddress from './../../../images/mailingAddress.png';
+import name from './../../../images/name.png';
+import password from './../../../images/password.png';
+import phone from './../../../images/phone.png';
 
 const ContentBox = props => <p className={`height-${props.value}`}>{props.children}</p>;
 
@@ -10,13 +17,18 @@ class EditProfile extends React.Component{
 render(){
     return (<div className="EditProfile">
               <Row className="row" type="flex" justify="center">
-                <Col span={16} push={2} className="col1">
+                <Col span={16} push={2} className="col1" >
                   <ContentBox value="100">
                     <span>Customer type</span><span style={{paddingLeft:"30px"}} className="valFont">Residential</span>
                   </ContentBox>
                 </Col>
-                <Col span={2} pull={16} className="col2">col-6 col-pull-18</Col>
+                <Col span={2} pull={16} className="col2">
+                  <ContentBox>
+                      <img src={customerType} alt="Customer's type"/>
+                  </ContentBox>
+                </Col>
               </Row>
+
               <Row className="row" type="flex" justify="center">
                 <Col span={16} push={2} className="col1">
                   <ContentBox value="100">
@@ -31,8 +43,13 @@ render(){
                     </div>
                   </ContentBox>
                 </Col>
-                <Col span={2} pull={16} className="col2">col-6 col-pull-18</Col>
+                <Col span={2} pull={16} className="col2">
+                <ContentBox>
+                  <img src={name} alt="Customer's name" />
+                </ContentBox>
+                </Col>
               </Row>
+
               <Row className="row" type="flex" justify="center">
                 <Col span={16} push={2} className="col1">
                   <ContentBox value="100">
@@ -49,8 +66,13 @@ render(){
                     </div>
                   </ContentBox>
                 </Col>
-                <Col span={2} pull={16} className="col2">col-6 col-pull-18</Col>
+                <Col span={2} pull={16} className="col2">
+                <ContentBox>
+                    <img src={phone} alt="Customer's phone" />
+                </ContentBox>
+                </Col>
               </Row>
+
               <Row className="row" type="flex" justify="center">
                 <Col span={16} push={2} className="col1">
                   <ContentBox value="100">
@@ -65,7 +87,12 @@ render(){
                     </div>
                   </ContentBox>
                 </Col>
-                <Col span={2} pull={16} className="col2">col-6 col-pull-18</Col>
+                <Col span={2} pull={16} className="col2">
+                <ContentBox>
+
+                    <img src={email} alt="Customer's email" />
+                </ContentBox>
+                </Col>
               </Row>
 
               <Row className="row" type="flex" justify="center">
@@ -80,7 +107,12 @@ render(){
                     </div>
                   </ContentBox>
                 </Col>
-                <Col span={2} pull={16} className="col2">col-6 col-pull-18</Col>
+                <Col span={2} pull={16} className="col2">
+                  <ContentBox>
+
+                      <img src={mailingAddress} alt="Customer's mailingAddress" />
+                  </ContentBox>
+                </Col>
               </Row>
 
               <Row className="row" type="flex" justify="center">
@@ -95,7 +127,11 @@ render(){
                     </div>
                   </ContentBox>
                 </Col>
-                <Col span={2} pull={16} className="col2">col-6 col-pull-18</Col>
+                <Col span={2} pull={16} className="col2">
+                  <ContentBox>
+                      <img src={loginID} alt="Customer's loginID" />
+                  </ContentBox>
+                </Col>
               </Row>
 
               <Row className="row" type="flex" justify="center">
@@ -112,7 +148,11 @@ render(){
                     </div>
                   </ContentBox>
                 </Col>
-                <Col span={2} pull={16} className="col2">col-6 col-pull-18</Col>
+                <Col span={2} pull={16} className="col2">
+                <ContentBox>
+                      <img src={password} alt="Customer's password" />
+                </ContentBox>
+                </Col>
               </Row>
             </div>);
   }
